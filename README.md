@@ -47,12 +47,10 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
    
    **Linux Terminal**: Create a new directory"newproject" as below" #mkdir newproject #cd newproject Use the below command to clone from GIT repository which contains Dockerfile, related files:
 
-   ```git clone https://github.com/srishkalra/mywebproject.git
-   ``` 
+   ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
    After this you should be able to see the Dockerfile as below, in your working directory:
-  ``` [root#mywebproject]# ls myapp.py Dockerfile README.md
-  ```
+  ``` [root#mywebproject]# ls myapp.py Dockerfile README.md```
 
 
    
@@ -61,8 +59,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
     You can download the Docker file from browser using the below link:
 
 
-     ```https://github.com/srishkalra/mywebproject.git
-     ```
+     ```https://github.com/srishkalra/mywebproject.git```
 
      Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
  
@@ -73,12 +70,10 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
     Use below commands to Build a docker image:
     **Command**:
-    ```docker build -t <imagename>. 
-    ```
+    ```docker build -t <imagename>. ```
 
     **Example**: 
-    ```docker build -t myappv1 .
-    ```
+    ```docker build -t myappv1 . ```
 
     >Note: myapp1 will be your image name in this example.
 
