@@ -38,7 +38,7 @@ Where it will work with Host Ip as well and can be replaced with localhost in ab
 Docker file can be found in git hub mentioned below.
 
 ##### Git URL:
-[GITHUB LINK](https://github.com/srishkalra/mywebproject.git)
+[GITHUB LINK] (https://github.com/srishkalra/mywebproject.git)
 
 ##### Risk/Decisions: 
 Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
@@ -61,9 +61,8 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
      ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
       After this you should be able to see the Dockerfile as below, in your working directory:
-     ```[root#mywebproject]# ls``` 
-   
-        ```myapp.py Dockerfile README.md```
+     `[root#mywebproject]# ls`
+      `myapp.py Dockerfile README.md`
   
  
   ##### Windows(Docker Desktop):
@@ -71,7 +70,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
          You can download the Docker file from browser using the below link:
 
 
-     [Githublink](https://github.com/srishkalra/mywebproject.git)
+   [Githublink] (https://github.com/srishkalra/mywebproject.git)
     
    Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
     **Below steps are common to any platform Windows/Unix(Just you need Docker installed)**:
