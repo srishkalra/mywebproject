@@ -30,9 +30,9 @@ service = [
     }
 ]
 @app.route('/',methods=['GET'])
-def hello_world():
+def home():
     app.logger.info('Displaying hello')
-    return 'Hello, World!:'
+    return 'Welcome to Web APP!:'
 
 @app.route('/info', methods=['GET'])
 def get_myapp_info():
