@@ -74,6 +74,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
       [Githublink](https://github.com/srishkalra/mywebproject.git)
     
       Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
+      
       **Below steps are common to any platform Windows/Unix(Just you need Docker installed)**:
 
  2) **Building a Docker Image using Dockerfile**:
