@@ -5,19 +5,19 @@ This Web Application has been built using ***Python*** based ***Flask*** Web fra
 #### Purpose: 
 This Application is a basic Webserver which contains a Home page and info page about an application. Further enhancements can be done to this application by creating URL's as per the requirement and to achieve that "myapp.py" files which hosts the flask web application needs to be updated accordingly.
 
-####Version: 
+#### Version: 
 Version of the APP has been set as v1.0 as initial and can be changed either in Docker file or while creating a Container and passing it as ENV variable in runtime.
 
-####Debug Level:
+#### Debug Level:
  Debug level is set as false by default and can be made true by passing as ENV variable while creating Docker Container
 
-####Logging: 
+#### Logging: 
 Logs of the applicaion can be found in "***myapp.log***" file which will be in the same path as your application,and can be found as you login to your APP container.This logs can be used for your troubleshooting and logging events for your application.Initial Log level has been set to INFO level and same information can be found on the webpage : http://localhost:5000/info
-##Specifications:
-####OS: 
+## Specifications:
+#### OS: 
 This application uses UBUNTU based base image and thus will support ubuntu commands which will update it to latest as a part of Docker image build.
 
-####Port Number:
+#### Port Number:
 
 5000 (set as default but changeable either in DOCKER file or mentioning at runtime during the container creation.)
 
@@ -29,28 +29,30 @@ Where it will work with Host Ip as well and can be replaced with localhost in ab
 
 ex : http://HostIP:5000/
 
-#####Python File name:
+##### Python File name:
  myapp.py and can be found in GIT URL.
 
-#####Docker File: 
+##### Docker File: 
 Can be found in git hub mentioned below.
 
-#####Git URL:
+##### Git URL:
 https://github.com/srishkalra/mywebproject.git
 
-#####Risk/Decisions: 
+##### Risk/Decisions: 
 Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
 
-#####Steps to Build Docker image and deploying Container from it.
+##### Steps to Build Docker image and deploying Container from it.
 
 1) **Download the Docker file**:
    
    **Linux Terminal**: Create a new directory"newproject" as below" #mkdir newproject #cd newproject Use the below command to clone from GIT repository which contains Dockerfile, related files:
 
-   ```git clone https://github.com/srishkalra/mywebproject.git``` 
+   ```git clone https://github.com/srishkalra/mywebproject.git
+   ``` 
 
    After this you should be able to see the Dockerfile as below, in your working directory:
-  ``` [root#mywebproject]# ls myapp.py Dockerfile README.md```
+  ``` [root#mywebproject]# ls myapp.py Dockerfile README.md
+  ```
 
 
    
@@ -59,7 +61,8 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
     You can download the Docker file from browser using the below link:
 
 
-     ```https://github.com/srishkalra/mywebproject.git```
+     ```https://github.com/srishkalra/mywebproject.git
+     ```
 
      Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
  
@@ -69,9 +72,13 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
 Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
     Use below commands to Build a docker image:
-    **Command**: ```docker build -t <imagename>. ```
+    **Command**:
+    ```docker build -t <imagename>. 
+    ```
 
-    **Example**: ```docker build -t myappv1 .```
+    **Example**: 
+    ```docker build -t myappv1 .
+    ```
 
     >Note: myapp1 will be your image name in this example.
 
