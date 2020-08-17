@@ -67,15 +67,14 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
     `myapp.py Dockerfile README.md`
   
  
-  ##### Windows(Docker Desktop):
+    ##### Windows(Docker Desktop):
 
          You can download the Docker file from browser using the below link:
 
-
-   [Githublink](https://github.com/srishkalra/mywebproject.git)
+      [Githublink](https://github.com/srishkalra/mywebproject.git)
     
-   Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
-    **Below steps are common to any platform Windows/Unix(Just you need Docker installed)**:
+      Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
+      **Below steps are common to any platform Windows/Unix(Just you need Docker installed)**:
 
  2) **Building a Docker Image using Dockerfile**:
      Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
