@@ -96,6 +96,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
      > Step 12/12 : CMD ["python", "myapp.py"] ---> Running in 517b5c0b8d62 Removing intermediate container 517b5c0b8d62 ---> 671d28fe949b Successfully built 671d28fe949b               Successfully tagged myappv1:latest```
  
  3) **Viewing the Built Docker Images**:
+ 
     **Command**:```docker images```
     
     > Output: REPOSITORY TAG IMAGE ID CREATED SIZE 
@@ -128,6 +129,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
        > Here 6001 is set to the Application Port Number at runtime, so Application will launch in 6001 Port number inside the container.
 
  5) **Check if Application is running successfully**: 
+ 
     **Command**: 
     ```docker logs <container name>```
    
@@ -141,7 +143,8 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
         Debug mode: on
 
     <br>
- 6) ***Login to your Containerized Application***.
+ 6) ***Login to your Containerized Application***
+ 
     **Command**:
     ```docker exec -it <container name> /bin/bash```
    
@@ -152,6 +155,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
     <br>
 
  7) **Application Launching**:
+ 
      Run the below commands inside the container :
 
     **Testing Homepage**: 
