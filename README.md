@@ -38,7 +38,7 @@ Where it will work with Host Ip as well and can be replaced with localhost in ab
 Docker file can be found in git hub mentioned below.
 
 ##### Git URL:
-https://github.com/srishkalra/mywebproject.git
+[GITHUB LINK](https://github.com/srishkalra/mywebproject.git)
 
 ##### Risk/Decisions: 
 Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
@@ -67,7 +67,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
 
 
    
-   ##### Windows(Docker Desktop):
+  ##### Windows(Docker Desktop):
 
     You can download the Docker file from browser using the below link:
 
@@ -143,6 +143,7 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 6) ***Login to your Containerized Application***.
  **Command**:
   ```docker exec -it <container name> /bin/bash```
+   
    **Example**:
    ```docker exec -it appv /bin/bash```
 
@@ -156,8 +157,8 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
    ```curl ip:portnumber/```
 
-   **Example**:
-   > Note:curl localhost:5000 This should give the Home page of this Web Application which says "Welcome to Web APP!" as below and it is a success message(APP launched successfull with homepage landed)
+      **Example**:
+       > Note:curl localhost:5000 This should give the Home page of this Web Application which says "Welcome to Web APP!" as below and it is a success message(APP launched                successfull with homepage loaded)
 
    ```root@9bb260d373ab:/myfirstproject# curl localhost:5000     Welcome to Web APP!```
 
@@ -173,13 +174,14 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
    > This should show the information about the application which is in JSON format in this case as below:
 
-   ```root@9bb260d373ab:/myfirstproject# curl localhost:5000/info [ { "service": [ { "git sha": "d7a9795c8e2346eb791540f797d6272916a3bce9", "service": "app", "version": "v1.0" }, { "loglevel": "INFO", "port": "5000" } ] }, 200 ]```
+     ```root@9bb260d373ab:/myfirstproject# curl localhost:5000/info [ { "service": [ { "git sha": "d7a9795c8e2346eb791540f797d6272916a3bce9", "service": "app", "version": "v1.0" }, { "loglevel": "INFO", "port": "5000" } ] }, 200 ]```
 
    > Same you should be able to see on your browser.
 
    > Note: if you are using checking the above command on Host. Kindly use Host port Number in `http://localhost:<hostport no>/info` which is same in this case.
 
   8) **Checking the Application logging**:
+  
   Application logs can be found inside the container , the momemt you login , the same path where you get the prompt. As it is ubuntu based image, **linux** based command will work.<br>
    **Example**: 
     ```root@9bb260d373ab:/myfirstproject# ls```
@@ -187,5 +189,5 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
      
    ***To see contents of myapp.log, use below command***:
 
->root@9bb260d373ab:/mywebproject# cat myapp.log 
-2020-08-17 10:37:10,475 INFO werkzeug MainThread : * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit) 2020-08-17 10:37:10,476 INFO werkzeug MainThread : * Restarting with stat 2020-08-17 10:37:10,710 WARNING werkzeug MainThread : * Debugger is active! 2020-08-17 10:37:10,711 INFO werkzeug MainThread : * Debugger PIN: 196-235-887 2020-08-17 10:37:22,046 INFO app Thread-2 : Displaying the info logs 2020-08-17 10:37:22,047 INFO werkzeug Thread-2 : 172.17.0.1 - - [17/Aug/2020 10:37:22] "GET /info HTTP/1.1" 200 - 2020-08-17 10:38:00,674 INFO app Thread-3 : Displaying the info logs 2020-08-17 10:38:00,675 INFO werkzeug Thread-3 : 127.0.0.1 - - [17/Aug/2020 10:38:00] "GET /info HTTP/1.1" 200
+  > root@9bb260d373ab:/mywebproject# cat myapp.log 
+    2020-08-17 10:37:10,475 INFO werkzeug MainThread : * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit) 2020-08-17 10:37:10,476 INFO werkzeug MainThread : * Restarting       with stat 2020-08-17 10:37:10,710 WARNING werkzeug MainThread : * Debugger is active! 2020-08-17 10:37:10,711 INFO werkzeug MainThread : * Debugger PIN: 196-235-887 2020-08-     17 10:37:22,046 INFO app Thread-2 : Displaying the info logs 2020-08-17 10:37:22,047 INFO werkzeug Thread-2 : 172.17.0.1 - - [17/Aug/2020 10:37:22] "GET /info HTTP/1.1" 200     2020-08-17 10:38:00,674 INFO app Thread-3 : Displaying the info logs 2020-08-17 10:38:00,675 INFO werkzeug Thread-3 : 127.0.0.1 - - [17/Aug/2020 10:38:00] "GET /info             HTTP/1.1" 200
