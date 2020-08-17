@@ -27,7 +27,7 @@ service = [
     {
         'port': "{}".format(port),
         'loglevel': "{}".format(logging.getLevelName(applog.level)
-    }
+     }
 ]
 @app.route('/',methods=['GET'])
 def hello_world():
