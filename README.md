@@ -61,7 +61,9 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
      ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
       After this you should be able to see the Dockerfile as below, in your working directory:
+      
      `[root#mywebproject]# ls`
+     
       `myapp.py Dockerfile README.md`
   
  
