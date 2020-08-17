@@ -50,6 +50,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
    ##### Linux Terminal:
    
     Create a new directory"newproject" as below"
+     
      `#mkdir newproject`
       
       `#cd newproject` 
@@ -60,7 +61,9 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
    ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
    After this you should be able to see the Dockerfile as below, in your working directory:
-   ```[root#mywebproject]# ls myapp.py Dockerfile README.md```
+   ```[root#mywebproject]# ls 
+   
+   myapp.py Dockerfile README.md```
 
 
    
@@ -81,6 +84,7 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
     Use below commands to Build a docker image:
 **Command**: 
     ```docker build -t <imagename>.```
+    
 **Example**:
      ```docker build -t myappv1 .```
 
@@ -109,6 +113,7 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
   **Example**: 
   ```docker run -d --name=appv -p 5000:5000 myappv1:latest ```
+  
   ```docker ps```
 >Output:  CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 1144b339aeec myappv1:latest "python myapp.py" 7 seconds ago Up 5 seconds 0.0.0.0:5000->5000/tcp appv
 
@@ -162,7 +167,8 @@ Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
    **<br>Testing Info Page**
  ```curl ip:portnumber/info```
-   **Example**: 
+  
+  **Example**: 
    ```curl localhost:5000/info```
 
    > This should show the information about the application which is in JSON format in this case as below:
