@@ -51,6 +51,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
    
     Create a new directory"newproject" as below"
      `#mkdir newproject`
+      
       `#cd newproject` 
       
       Use the below command to clone from GIT repository which contains Dockerfile, and application related files needed to build docker image:
