@@ -9,5 +9,5 @@ RUN pip3.8 install flask
 RUN pip3.8 install gitpython
 RUN git clone https://github.com/srishkalra/mywebproject.git
 WORKDIR mywebproject
-RUN chmod u+x app.py
+RUN chmod u+x myapp.py
 CMD ["python", "myapp.py"]
