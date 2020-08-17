@@ -81,6 +81,7 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
      Downloaded "Dockerfile" from the Step1 can be used to build Docker image:
 
       Use below commands to Build a docker image:
+      
      **Command**: 
        ```docker build -t <imagename>.```
     
