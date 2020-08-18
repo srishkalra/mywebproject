@@ -124,7 +124,9 @@ Docker file can be found in git hub mentioned below.
       ```docker run -d --name=<container name> -e PORT=<Container_port> -e VERSION=<app version> -p <Host_port:Container_port> <docker image name>```
 
        **Example for running container in a different specified port and version and enabling the DEBUG level to true**:
+       
       ```docker run -d --name=appv -e PORT=6001 -e VERSION=v2.0 -e DEBUG=true -p 6000:6001 myappv1:latest```
+      
        > Here 6001 is set to the Application Port Number at runtime, so Application will launch in 6001 Port number inside the container.
 
  5) **Check if Application is running successfully**: 
@@ -178,7 +180,9 @@ Docker file can be found in git hub mentioned below.
 
      > This should show the information about the application which is in JSON format in this case as below:
 
-     ```root@9bb260d373ab:/myfirstproject# curl localhost:5000/info [ { "service": [ { "git sha": "d7a9795c8e2346eb791540f797d6272916a3bce9", "service": "app", "version": "v1.0"        }, { "loglevel": "INFO", "port": "5000" } ] }, 200 ]```
+     ```root@9bb260d373ab:/myfirstproject# curl localhost:5000/info 
+     
+     [ { "service": [ { "git sha": "d7a9795c8e2346eb791540f797d6272916a3bce9", "service": "app", "version": "v1.0"        }, { "loglevel": "INFO", "port": "5000" } ] }, 200 ]```
 
      > Same you should be able to see on your browser.
 
@@ -188,6 +192,7 @@ Docker file can be found in git hub mentioned below.
   
      Application logs can be found inside the container , the momemt you login , the same path where you get the prompt. As it is ubuntu based image, **linux** based command          will work.<br>
     **Example**: 
+    
     ```root@9bb260d373ab:/myfirstproject# ls```
     ```Dockerfile README.md myapp.py myapp.log```
      
