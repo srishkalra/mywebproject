@@ -230,6 +230,7 @@ Docker file can be found in git hub mentioned below.
        Use git status in your bash to view all the files which are going to be staged to the first commit
 
       `#git status` 
+        
         You can create a commit message by git commit -m 'your message', which adds the change to your local repository
 
       `#git commit -m "New commit messsage" Dockerfile` 
