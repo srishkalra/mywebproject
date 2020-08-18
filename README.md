@@ -45,9 +45,11 @@ Docker file can be found in git hub mentioned below.
 
 1) **Download the Docker file**:
    
-   ##### Linux Terminal:
+   ##### Linux/Windows Terminal:
    
-   Create a new directory"newproject" as below"
+   Run the below command on git bash to clone the Repository to get the project files:
+   
+   Create a new directory "newproject" as below"
      
     `#mkdir newproject`
       
@@ -58,20 +60,13 @@ Docker file can be found in git hub mentioned below.
 
     ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
-    After this you should be able to see the Dockerfile as below, in your working directory:
-      
-   `[root#mywebproject]# ls`
+    After this you should be able to see the below files including Docker, in your working directory while listing the files.
      
     `myapp.py Dockerfile README.md`
   
  
-    ##### Windows(Docker Desktop):
-
-         You can download the Docker file from browser using the below link:
-
-      [Githublink](https://github.com/srishkalra/mywebproject.git)
-    
-      Copy the Docker file in your project directory and save it without any extension and name it as Dockerfile,
+   
+      > Note: For Windows(Docker Desktop),  While cloning the Docker file in your project directory make sure it should be without any extension.
       
       **Below steps are common to any platform Windows/Unix(Just you need Docker installed)**:
 
@@ -231,7 +226,7 @@ Docker file can be found in git hub mentioned below.
 
       `#git status` 
         
-        You can create a commit message by git commit -m 'your message', which adds the change to your local repository
+       You can create a commit message by git commit -m 'your message', which adds the change to your local repository
 
       `#git commit -m "New commit messsage" Dockerfile` 
      
