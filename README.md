@@ -210,29 +210,46 @@ Docker file can be found in git hub mentioned below.
        View files
 
        `#ls` 
+       
+       Switch to your test branch to make changes on your files/codes
+       
+       `#git checkout -b testbranch`
+       
+       Check which branch you are in currently(Should be testbranch)
+       
+       `#git branch`
 
-       M odify your code changes to the existing file
+       Modify your code changes to the existing file
 
        `#vi Dockerfile` 
 
        Use git add . in your bash to add all the files to the given directory - This command will add your modified files for staging
 
-     `#git add .` 
-      Use git status in your bash to view all the files which are going to be staged to the first commit
+      `#git add .` 
+      
+       Use git status in your bash to view all the files which are going to be staged to the first commit
 
-     `#git status` 
-      You can create a commit message by git commit -m 'your message', which adds the change to your local repository
+      `#git status` 
+        You can create a commit message by git commit -m 'your message', which adds the change to your local repository
 
-     `#git commit -m "New commit messsage" Dockerfile` 
-
-      Connect to your remote GITHUB repository and be ready to push your changes - Only use if you have not executed the git clone command in the first step
-
-     `#git remote add origin https://github.com/srishkalra/mywebproject.git`
-
-     Provide your GITHUB login details for pushing local changes/contents to your GitHub Repository
+      `#git commit -m "New commit messsage" Dockerfile` 
      
-     `#git push -u origin master` 
+       Now switch to master branch to merge your testbranch code
      
-      ##### Risk/Decisions: 
-      Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
+      `#git checkout master`
+     
+       Merge the changes(modified Dockerfile) you have done in the testbranch to the master branch
+     
+      `#git merge testbranch`
 
+       Connect to your remote GITHUB repository and be ready to push your changes - Only use if you have not executed the git clone command in the first step
+
+      `#git remote add origin https://github.com/srishkalra/mywebproject.git`
+
+       Provide your GITHUB login details for pushing local changes/contents to your GitHub Repository
+     
+      `#git push origin master` 
+     
+       ##### Risk/Decisions: 
+       GIT url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
+ 
