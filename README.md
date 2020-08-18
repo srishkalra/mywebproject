@@ -40,8 +40,6 @@ Docker file can be found in git hub mentioned below.
 ##### Git URL:
    [GITHUBLINK](https://github.com/srishkalra/mywebproject.git)
 
-##### Risk/Decisions: 
-Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
 
 ##### Steps to Build Docker image and deploying Container from it.
 
@@ -233,3 +231,6 @@ Connect to your remote GITHUB repository and be ready to push your changes - Onl
 
 Provide your GITHUB login details for pushing local changes/contents to your GitHub Repository
 `#git push -u origin master` 
+##### Risk/Decisions: 
+Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
+
