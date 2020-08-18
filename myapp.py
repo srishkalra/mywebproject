@@ -1,7 +1,7 @@
-######Author:Srishti Kalra:##########################################################################
-##############A simple Webapplication based on flask which has 2 web pages as Home and Info page##########
-################Logging is enabled for this APP as INFO level##############################
-##################Logs file will be saved in "myapp.log"###################################################
+###### Author:Srishti Kalra ##########################################################################
+############## A simple Webapplication based on flask which has 2 web pages as Home and Info page ##########
+################ Logging is enabled for this APP as INFO level ##############################
+################## Logs file will be saved in "myapp.log" ###################################################
 
 # Importing flask module in the project
 # An object of Flask class is our WSGI application
