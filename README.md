@@ -203,34 +203,36 @@ Docker file can be found in git hub mentioned below.
 
        `#git clone https://github.com/srishkalra/mywebproject.git` 
 
-     Go to your clone repository/directory
+       Go to your clone repository/directory
 
       `#cd /mywebproject` 
 
        View files
 
-`#ls` 
+       `#ls` 
 
-Modify your code changes to the existing file
+       M odify your code changes to the existing file
 
-`#vi Dockerfile` 
+       `#vi Dockerfile` 
 
-Use git add . in your bash to add all the files to the given directory - This command will add your modified files for staging
+       Use git add . in your bash to add all the files to the given directory - This command will add your modified files for staging
 
-`#git add .` 
-Use git status in your bash to view all the files which are going to be staged to the first commit
+     `#git add .` 
+      Use git status in your bash to view all the files which are going to be staged to the first commit
 
-`#git status` 
-You can create a commit message by git commit -m 'your message', which adds the change to your local repository
+     `#git status` 
+      You can create a commit message by git commit -m 'your message', which adds the change to your local repository
 
-`#git commit -m "New commit messsage" Dockerfile` 
+     `#git commit -m "New commit messsage" Dockerfile` 
 
-Connect to your remote GITHUB repository and be ready to push your changes - Only use if you have not executed the git clone command in the first step
+      Connect to your remote GITHUB repository and be ready to push your changes - Only use if you have not executed the git clone command in the first step
 
-`#git remote add origin https://github.com/srishkalra/mywebproject.git`
+     `#git remote add origin https://github.com/srishkalra/mywebproject.git`
 
-Provide your GITHUB login details for pushing local changes/contents to your GitHub Repository
-`#git push -u origin master` 
-##### Risk/Decisions: 
-Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
+     Provide your GITHUB login details for pushing local changes/contents to your GitHub Repository
+     
+     `#git push -u origin master` 
+     
+      ##### Risk/Decisions: 
+      Git url need to be updated in Docker file to user git URL if path of "myapp.py"(Flask APP file).
 
