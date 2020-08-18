@@ -108,6 +108,7 @@ Docker file can be found in git hub mentioned below.
 
     **Example**: 
      ```docker run -d --name=appv -p 5000:5000 myappv1:latest ``` 
+     
      **Output**: Container ID will be generated...(1144b339aeec)
      
     > To check the running container status and details
