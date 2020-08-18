@@ -197,19 +197,19 @@ Git url need to be updated in Docker file to user git URL if path of "myapp.py"(
     > root@9bb260d373ab:/mywebproject# cat myapp.log 
     2020-08-17 10:37:10,475 INFO werkzeug MainThread : * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit) 2020-08-17 10:37:10,476 INFO werkzeug MainThread : * Restarting       with stat 2020-08-17 10:37:10,710 WARNING werkzeug MainThread : * Debugger is active! 2020-08-17 10:37:10,711 INFO werkzeug MainThread : * Debugger PIN: 196-235-887 2020-08-     17 10:37:22,046 INFO app Thread-2 : Displaying the info logs 2020-08-17 10:37:22,047 INFO werkzeug Thread-2 : 172.17.0.1 - - [17/Aug/2020 10:37:22] "GET /info HTTP/1.1" 200     2020-08-17 10:38:00,674 INFO app Thread-3 : Displaying the info logs 2020-08-17 10:38:00,675 INFO werkzeug Thread-3 : 127.0.0.1 - - [17/Aug/2020 10:38:00] "GET /info             HTTP/1.1" 200
 
-#### Future Scope:
-For future enhancement, Docker file can be cloned to user repository and then after the the updation of the code, code can be version controlled via GIT using below command.
+     #### Future Scope:
+     For future enhancement, Docker file can be cloned to user repository and then after the the updation of the code, code can be version controlled via GIT using below               command.
 
-**Pre-requisites**: GIT client should be installed on your system, on the terminal run the below commands,
-Clone your GITHUB repository using this command to your client system
+     **Pre-requisites**: GIT client should be installed on your system, on the terminal run the below commands,
+     Clone your GITHUB repository using this command to your client system
 
-`#git clone https://github.com/srishkalra/mywebproject.git` 
+       `#git clone https://github.com/srishkalra/mywebproject.git` 
 
-Go to your clone repository/directory
+     Go to your clone repository/directory
 
-`#cd /mywebproject` 
+      `#cd /mywebproject` 
 
-View files
+       View files
 
 `#ls` 
 
