@@ -14,7 +14,7 @@ Version of the APP has been set as v1.0 as initial and can be changed either in 
 ##### Logging: 
 Logs of the applicaion can be found in "**myapp.log**" file which will be in the same path as your application,and can be found as you login to your APP container.This logs can be used for your troubleshooting and logging events for your application.Initial Log level has been set to INFO level and same information can be found on the webpage :
 
-Myapp Info Page (http://localhost:5000/info)
+Myapp Info Page `http://localhost:5000/info`
 #### Application Specifications:
 ##### OS: 
 This application uses UBUNTU based base image and thus will support ubuntu commands which will update it to latest as a part of Docker image build.
