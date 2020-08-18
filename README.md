@@ -107,10 +107,15 @@ Docker file can be found in git hub mentioned below.
     > Note: choose a port which is available in your host machine. In below example, 5000 has been given default in application as ENV variable in Docker file and can be               changed, explained in further instructions.As this application is built on Flask framework which uses 5000 by default.
 
     **Example**: 
-     ```docker run -d --name=appv -p 5000:5000 myappv1:latest ```
+     ```docker run -d --name=appv -p 5000:5000 myappv1:latest ``` 
+     **Output**: Container ID will be generated...(1144b339aeec)
+     
+    > To check the running container status and details
   
      ```docker ps```
-    > Output:  CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 1144b339aeec myappv1:latest "python myapp.py" 7 seconds ago Up 5 seconds 0.0.0.0:5000->5000/tcp appv
+     
+    > Output:  CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 
+    1144b339aeec myappv1:latest "python myapp.py" 7 seconds ago Up 5 seconds 0.0.0.0:5000->5000/tcp appv
 
     > Note: If you want to change the Port number other than 5000(Application port number) which is set as default, can be done using below command, by passing ENV Variable           using "-e" option as show below which creating a container same applies for version as well
 
