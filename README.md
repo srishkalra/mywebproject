@@ -59,10 +59,16 @@ Docker file can be found in git hub mentioned below.
     After this you should be able to see directory mywebproject and browsing it will provide the below files including Docker, in your working directory while listing the files.
      
    ```# ls ```
+   
      mywebproject
+     
+     
    ```# cd mywebproject```
-    `ls`
-    `myapp.py Dockerfile README.md`
+   
+   ```#ls```
+   
+   
+    myapp.py Dockerfile README.md`
   
  
    
