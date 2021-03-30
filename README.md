@@ -1,9 +1,9 @@
 ### Overview:
  
-This Web Application has been built using ***Python***(3.8.3) based ***Flask*** Web framework
+This Web Application has been built using ***Python***(3.9.2) based ***Flask*** Web framework
 
 ##### Purpose: 
-This Application is a basic Webserver which contains a Home page and info page about an application. Further enhancements can be done to this application by creating URL's as per the requirement and to achieve that "myapp.py" files which hosts the flask web application needs to be updated accordingly.
+This Application is a basic Webserver which contains a Home page and info page about an application. Further enhancements can be done to this application by creating URL's as per the requirement and to achieve that python script "myapp.py" which contains the flask web application needs to be updated accordingly.
 
 ##### Version: 
 Version of the APP has been set as v1.0 as initial and can be changed either in Docker file or while creating a Container and passing it as ENV variable in runtime.
@@ -27,9 +27,9 @@ This application uses UBUNTU based base image and thus will support ubuntu comma
 `http://localhost:5000/`
 `http://localhost:5000/info`
 
-Where it will work with Host Ip as well and can be replaced with localhost in above link.
+Where it will work with Host Ip as well with Host Port and can be replaced with localhost in above link.
 
-**Example** : `http://hostip:5000/`
+**Example** : `http://hostip:hostport/`
 
 ##### Python File name:
  myapp.py and can be found in GIT URL.
@@ -49,19 +49,19 @@ Docker file can be found in git hub mentioned below.
    
    Run the below command on git bash to clone the Repository to get the project files:
    
-   Create a new directory "newproject" as below"
-     
-    `#mkdir newproject`
+ 
       
-    `#cd newproject` 
-      
-    Use the below command to clone from GIT repository which contains Dockerfile, and application related files needed to build docker image:
+   In the present working directory,Use the below command on git bash to clone from GIT repository which contains Dockerfile, and application related files needed to build docker image:
 
 
     ```git clone https://github.com/srishkalra/mywebproject.git``` 
 
-    After this you should be able to see the below files including Docker, in your working directory while listing the files.
+    After this you should be able to see directory mywebproject and browsing it will provide the below files including Docker, in your working directory while listing the files.
      
+   ```# ls ```
+     mywebproject
+   ```# cd mywebproject```
+    `ls`
     `myapp.py Dockerfile README.md`
   
  
